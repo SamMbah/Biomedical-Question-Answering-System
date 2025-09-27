@@ -1,0 +1,268 @@
+[
+  {
+    "model": "E5",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Yes, thrombopoietin levels are increased in the serum of asphyxiated neonates, as shown in a prospective controlled study.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "E5+LABSE",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "E5+MPNET",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are typically increased in the serum of asphyxiated neonates due to the body's response to hypoxic conditions.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "E5+SPECTER",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are likely increased in the serum of asphyxiated neonates based on the external knowledge that thrombopoietin is a hormone involved in platelet production and is known to increase in response to various stressors or injuries.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FASTTEXT",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are likely increased in the serum of asphyxiated neonates, as thrombopoietin is a hormone that regulates platelet production and is released in response to low platelet levels. This increase may be a result of the body's response to the stress of asphyxia.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FT×0.3+E5×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FT×0.3+INSTR×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FT×0.3+JINA×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FT×0.3+LABSE×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FT×0.3+MPNET×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "FT×0.3+SPECTER×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are typically increased in the serum of asphyxiated neonates as a response to the hypoxic insult.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "INSTR",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "INSTR+E5",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are typically increased in the serum of asphyxiated neonates as a response to hypoxia and tissue damage.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "INSTR+JINA",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "INSTR+LABSE",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "INSTR+MPNET",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are typically increased in response to platelet destruction or decreased platelet production. In the context of asphyxiated neonates, where there may be tissue damage and increased demand for platelets, it is possible that thrombopoietin levels could be elevated. A prospective controlled study would be needed to confirm this relationship.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "INSTR+SPECTER",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are typically increased in the serum of asphyxiated neonates due to the body's response to hypoxic conditions.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "JINA",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "JINA+E5",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates. Thrombopoietin is a hormone that regulates the production of platelets in the body and is not directly related to asphyxia.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "JINA+LABSE",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "JINA+MPNET",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Yes, thrombopoietin levels are increased in the serum of asphyxiated neonates, as shown in a prospective controlled study.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "JINA+SPECTER",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "LABSE",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates. Thrombopoietin is a hormone that regulates the production of platelets in the bone marrow and is not directly related to asphyxia.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "MINILM12",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates. Thrombopoietin is a hormone that regulates the production of platelets in the bone marrow and is not directly related to asphyxia.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "MINILM6",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "MINILM6+MINILM12",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not mentioned in the provided contexts or external knowledge.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "MPNET",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "MPNET+LABSE",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Yes, thrombopoietin levels are increased in the serum of asphyxiated neonates, as shown in a prospective controlled study.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "SPECTER",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "SPECTER+LABSE",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "SPECTER+MPNET",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "W2V×0.3+E5×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "W2V×0.3+INSTR×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Thrombopoietin levels are typically increased in the serum of asphyxiated neonates due to the body's response to hypoxia and stress. This increase in thrombopoietin is a physiological response to promote platelet production and maintain hemostasis in these neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "W2V×0.3+JINA×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "W2V×0.3+LABSE×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates. Thrombopoietin is a hormone that regulates the production of platelets in the bone marrow and is not directly related to asphyxia.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "W2V×0.3+MPNET×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "Yes, thrombopoietin levels are increased in the serum of asphyxiated neonates, as shown in a prospective controlled study.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "W2V×0.3+SPECTER×0.7",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not mentioned in the provided context or external knowledge.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  },
+  {
+    "model": "WORD2VEC",
+    "question": "Is thrombopoietin level increased in the serum of asphyxiated neonates : a prospective controlled study?",
+    "generated_answer": "No, thrombopoietin levels are not typically increased in the serum of asphyxiated neonates.",
+    "ground_truth": "TPO increased and correlated with severity of asphyxia at 3 and 7 days of life. It correlated negatively with the platelet count at all times.",
+    "external_knowledge": "BioPortal: Is a"
+  }
+]

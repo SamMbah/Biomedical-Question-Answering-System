@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+*.log
+
+pytorch/
+
+
+# Jupyter / VSCode
+.ipynb_checkpoints/
+.vscode/
+
+# Data & models
+data/
+datasets/
+embeddings/
+*.pkl
+*.pt
+*.bin
+*.model
+*.h5
+*.npy
+*.npz
+*.csv
+*.tsv
+*.jsonl
+*.zip
+*.gz
+*.xz
+*.7z
+
+# System
+.DS_Store

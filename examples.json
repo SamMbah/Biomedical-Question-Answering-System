@@ -1,0 +1,170 @@
+[
+  {
+    "model": "INSTR",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "JINA",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "E5",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "SPECTER",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "MPNET",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "MINILM6",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "MINILM12",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "LABSE",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "WORD2VEC",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Yes, salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FASTTEXT",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Yes, salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "INSTR+E5",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "INSTR+SPECTER",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "INSTR+JINA",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "E5+MPNET",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "MPNET+LABSE",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "MINILM6+MINILM12",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are transiently colonizing newborn and infant mice tissues, even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "W2V×0.3+INSTR×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FT×0.3+INSTR×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "W2V×0.3+E5×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Yes, salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FT×0.3+E5×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Yes, salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "W2V×0.3+SPECTER×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FT×0.3+SPECTER×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "W2V×0.3+JINA×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FT×0.3+JINA×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "W2V×0.3+MPNET×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FT×0.3+MPNET×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "W2V×0.3+LABSE×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "Salmonella enterica Serovars Typhi and Paratyphi A are avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  },
+  {
+    "model": "FT×0.3+LABSE×0.7",
+    "question": "Are salmonella enterica Serovars Typhi and Paratyphi A avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium?",
+    "generated_answer": "No, Salmonella enterica Serovars Typhi and Paratyphi A are not avirulent in newborn and infant mice even when expressing virulence plasmid genes of Salmonella Typhimurium.",
+    "ground_truth": "Newborn and infant mice infected with S. Typhi and S. Paratyphi A do not succumb to the infection and that carriage of the S. Typhimurium virulence plasmid, pSTV, did not influence these results."
+  }
+]
