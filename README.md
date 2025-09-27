@@ -1,108 +1,135 @@
-# ICONQUER – Medical QA with Embeddings, RAG, and Qdrant
+# ICONQUER – Biomedical QA with Embeddings, RAG, and Qdrant
 
-ICONQUER is a **medical question-answering** pipeline that combines:
-- **Text embeddings** (Instructor, E5, MiniLM, etc.)
+ICONQUER is a **biomedical question-answering** pipeline that combines:
+- **Text embeddings** (Instructor, E5, MiniLM, SBERT, word2vec/fastText, etc.)
 - A **vector DB (Qdrant)** for semantic retrieval
 - An **LLM generator** for final answers
-- Lightweight eval scripts for MedQA / HotPotQA
+- Lightweight eval scripts for **PubMedQA (ori_pqaa.json)** and **HotpotQA (full wiki)**
 
-## What’s inside
-- `make_*_emb.py`, `ingest_*_embeddings.py` — build and load train/test embeddings  
-- `load_and_push_qdrant.py`, `prepare_qdrant_hotpot.py` — create Qdrant collections and upsert vectors  
-- `eval_*.py`, `run_eval.sh` — run offline evaluations (cosine, distance, ROUGE)  
-- `eval_qa.py`, `eval_with_qdrant*.py` — interactive/demo QA with retrieval  
-- `UmlsClient.py`, `test_umls.py` — UMLS/BioPortal hooks  
-- `examples*.csv/json`, `hotpotqa.pkl`, `medqa.pkl` — sample data/artifacts  
-- `requirements.txt`, `.env` — deps and config
+---
 
-## Prerequisites
-- Python 3.9+ (3.10 recommended)
-- (Optional) NVIDIA GPU + CUDA/cuDNN
-- **Qdrant** (Docker or Cloud)
-- (Optional) OpenAI API key (or swap in a different LLM)
+## 📂 Repo Structure & Key Files
 
-## Quick start
+This repo is organized into scripts for **embedding**, **retrieval**, **evaluation**, and **utilities**. Below is a guide for reviewers:
 
-1) **Clone & env**
+### 1) Embeddings & Ingestion
+- `make_train_embeddings.py` → Build embeddings from PubMedQA (`ori_pqaa.json`)
+- `make_instr_test_emb.py` / `make_sbert_test_emb.py` / `make_w2v_ft_test_emb.py` → Generate test embeddings with different models
+- `ingest_embeddings.py` / `ingest_test_embeddings.py` → Load embeddings into memory for pushing
+- `push_w2v_ft.py` → Special handling for word2vec/fastText embeddings
+
+### 2) Qdrant Vector DB & Retrieval
+- `load_and_push_qdrant.py` → Create Qdrant collections & upsert vectors
+- `prepare_qdrant_hotpot.py` → Load HotpotQA dataset into Qdrant
+- `eval_with_qdrant.py` → Main retrieval + QA pipeline
+- `eval_with_qdrant_enriched_with_graph.py` → Retrieval with enriched context
+- `run_eval.sh` → Shell script to restart Qdrant and run evaluation
+
+### 3) Evaluation & Experiments
+- `eval_test_only.py` → Evaluate retrieval/QA on MedQA test set
+- `eval_test_enriched.py` / `eval_test_with_enriched_knowledge.py` → Test with enriched knowledge
+- `eval_fast_stream.py` → Faster evaluation loop for development
+- `evaluate_hotpotqa_generalization.py` → Generalization experiments on HotpotQA
+- `eval_qa.py` → Interactive QA from console
+- `run_full_medqa_test_pipeline.py` → End-to-end MedQA pipeline (embedding → retrieval → evaluation)
+
+### 4) Data & Examples
+- `examples.json` / `examples_test*.json` → Small sample inputs
+- `eval_sample_ids.json` → Fixed test IDs for reproducibility
+- `print_examples.py` → Pretty-print examples
+
+### 5) Knowledge Graph (optional)
+*(kept for experiments; Qdrant-only pipeline does not require these)*
+- `import_to_neo4j.py`, `view_kg.py`
+- `knowledge_graph.gml`, `knowledge_graph.json`, `knowledge_graph.svg`, `hotpotqa_combined_knowledge_graph.gml`
+
+### 6) Utilities & Environment
+- `gpu_check.py`, `gpu_test.py` → Check CUDA/GPU availability
+- `requirements.txt` → Python dependencies
+- `.gitignore` → Ignore large models/datasets
+- `UmlsClient.py`, `test_umls.py`, `umls_test.py` → UMLS integration (optional)
+- `notebook.py`, `notebook_1.py`, `updatednotebook.py` → Exploratory notebooks as `.py`
+- Images: `Ensemble_Embedding_Comparison.png`, `medqa_individual_embedding_comparison.png`
+
+---
+
+##  Quick Start
+
+1. **Setup environment**
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate   # or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
 
-2) **Configure `.env`** (create if missing)
-```
-# Qdrant
-QDRANT_URL=http://localhost:6333
-QDRANT_API_KEY=
-
-# LLM (optional)
-OPENAI_API_KEY=sk-...
-```
-
-3) **Run Qdrant**
+2. **Run Qdrant (Docker)**
 ```bash
-# Qdrant (Docker)
 docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
 ```
 
-4) **Build embeddings & load**
+3. **Build & push embeddings**
 ```bash
 python make_train_embeddings.py
 python ingest_embeddings.py
 python load_and_push_qdrant.py
 ```
 
-5) **Evaluate**
+4. **Evaluate**
 ```bash
 bash run_eval.sh
 python eval_test_only.py
-python eval_with_qdrant.py
 ```
 
-6) **Try QA**
+5. **Try QA**
 ```bash
 python eval_qa.py
-python eval_with_qdrant_enriched.py
 ```
 
 ---
 
-## 📂 Datasets
+##  Datasets
 
-You’ll need to download the main datasets used in ICONQUER:
+- **PubMedQA (ori_pqaa.json)** – Core dataset for experimentation  
+  🔗 [PubMedQA GitHub](https://github.com/pubmedqa/pubmedqa)  
 
-- **PubMedQA (ori_pqaa.json)** — the core dataset used in experimentation  
-  🔗 [PubMedQA GitHub](https://github.com/pubmedqa/pubmedqa) (PQA-A and PQA-U splits are provided there)  
+- **HotpotQA full wiki** – Used for generalization  
+  🔗 [HotpotQA official site](https://hotpotqa.github.io/)  
 
-- **HotpotQA full wiki (hotpotqa_full_wiki)** — used for generalization  
-  🔗 [HotpotQA official website / GitHub](https://hotpotqa.github.io/)  
-
-After downloading, place the files in the project root (or adjust paths in `eval_*.py` and ingestion scripts).
+> Place datasets in the repo root or update paths in scripts.
 
 ---
 
-## Tips & Troubleshooting
-- **GPU check**: `python gpu_check.py` or `python gpu_test.py`  
-- **Qdrant**: If searches return empty, confirm collection name, vector size, and distance.  
-- **LLM keys**: Ensure `OPENAI_API_KEY` is set if using OpenAI.  
+##  Tips & Troubleshooting
+- **GPU check**: `python gpu_check.py`  
+- **Qdrant empty results**: check collection name, vector size, and distance metric  
+- **Secrets**: set `OPENAI_API_KEY` in `.env` or your shell, never in code  
 
 ---
 
-## Repo structure (minimal)
-```
-.
-├─ embeddings/               # (optional) saved vectors
-├─ pytorch/, test_emb/       # model helpers / tests
-├─ *_emb*.pkl                # embedding artifacts
-├─ eval_*.py                 # evaluation & QA scripts
-├─ load_and_push_qdrant.py   # Qdrant loader
-├─ requirements.txt
-└─ .env                      # config variables
+##  Suggested Reading Order for Reviewers
+1. **README.md** → overview + setup  
+2. **make_*_emb*.py** → how embeddings are built  
+3. **load_and_push_qdrant.py** → how vectors are stored  
+4. **eval_with_qdrant.py** → retrieval + QA logic  
+5. **eval_test_only.py** → evaluation flow  
+6. **examples.json** → test input/output  
+7. (Optional) **Knowledge graph scripts** if interested in KG augmentation  
+
+---
+
+##  License
+MIT (recommended; update LICENSE file accordingly)
+
+---
+
+##  Citation
+```bibtex
+@misc{mbah2025iconquer,
+  title={ICONQUER: Biomedical QA with Embeddings and Qdrant},
+  author={Mbah, Samuel and Temitayo, Fagbola},
+  year={2025},
+  url={https://github.com/SamMbah/Biomedical-Question-Answering-System}
+}
+
 ```
 
-## License
-MIT License.
-
-## Citation
-If you use this project, please cite the ICONQUER work (add BibTeX once finalized).
